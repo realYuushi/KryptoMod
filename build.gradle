@@ -42,7 +42,7 @@ repositories {
 }
 
 dependencies {
-	compile 'com.github.ReflxctionDev:SimpleHypixelAPI:1.0.9-BETA'
+	compile "com.github.KevinPriv:HypixelApi4J:API-1.7"
 }
 
 processResources
