@@ -10,7 +10,12 @@ public class FetchDataThread implements Runnable {
 	public void run(){  
 		iCommandSender.addChatMessage(new ChatComponentText(EnumChatFormatting.GREEN + "[DetonatorMod] Fetching data for user " + strings[0] + "..."));
         String response = HttpRequest.get("https://detonatorapi.glitch.me/?name="+strings[0]).body();
-        iCommandSender.addChatMessage(new ChatComponentText(EnumChatFormatting.GREEN + response)); 
+        if (response.contains("Error")) {
+        	iCommandSender.addChatMessage(new ChatComponentText(EnumChatFormatting.RED + response));
+        }
+        else {
+        	iCommandSender.addChatMessage(new ChatComponentText(EnumChatFormatting.GREEN + response));
+        }
 	}
 	public static void main(ICommandSender iiCommandSender, String[] stringss){
 		iCommandSender = iiCommandSender;
