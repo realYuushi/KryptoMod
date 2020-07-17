@@ -7,7 +7,7 @@ import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.EnumChatFormatting;
 
 import com.tyman.DetonatorMod.DetonatorMod;
-import com.tyman.DetonatorMod.utils.FetchPlayerDataThread;
+import com.tyman.DetonatorMod.utils.FetchRankUpdatesThread;
 
 public class RankUpdatesCommand extends CommandBase {
 
@@ -41,7 +41,7 @@ public class RankUpdatesCommand extends CommandBase {
             return;
         } else {
            //execute user fetching procedure
-        	FetchPlayerDataThread.main(iCommandSender);
+        	FetchRankUpdatesThread.main(iCommandSender);
         }
     }
 
