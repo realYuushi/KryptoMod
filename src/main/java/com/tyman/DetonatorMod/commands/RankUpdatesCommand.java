@@ -19,12 +19,12 @@ public class RankUpdatesCommand extends CommandBase {
 
     @Override
     public String getCommandName() {
-        return "dstatsall";
+        return "dranks";
     }
 
     @Override
     public String getCommandUsage(ICommandSender iCommandSender) {
-        return "dstatsall";
+        return "dranks";
     }
 
     @Override
@@ -37,7 +37,7 @@ public class RankUpdatesCommand extends CommandBase {
     @Override
     public void processCommand(ICommandSender iCommandSender, String[] strings) throws CommandException {
         if(strings.length > 1) {
-            iCommandSender.addChatMessage(new ChatComponentText(EnumChatFormatting.RED + "[DetonatorMod] Usage is /dstatsall"));
+            iCommandSender.addChatMessage(new ChatComponentText(EnumChatFormatting.RED + "[DetonatorMod] Usage is /dranks"));
             return;
         } else {
            //execute user fetching procedure
