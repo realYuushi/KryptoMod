@@ -5,6 +5,7 @@
     "1.8.9-recommended": "BETA-0.0.3"
   },
   "1.8.9": {
+    "BETA-0.0.5": "Test update (ignore this)",
     "BETA-0.0.4": "Added dstatsall command",
     "BETA-0.0.3": "Made error messages display as red, instead of green.",
     "BETA-0.0.2": "Fixed game freezing while feching data.",
