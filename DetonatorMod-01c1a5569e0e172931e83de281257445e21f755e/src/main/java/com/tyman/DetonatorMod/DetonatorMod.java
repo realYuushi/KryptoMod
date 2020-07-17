@@ -1,6 +1,5 @@
 package com.tyman.DetonatorMod;
 
-import com.tyman.DetonatorMod.commands.RankUpdatesCommand;
 import com.tyman.DetonatorMod.commands.ViewStatsCommand;
 
 import net.minecraftforge.client.ClientCommandHandler;
@@ -13,15 +12,14 @@ public class DetonatorMod
 {
     public static final String MODID = "detonatormod";
     public static final String MOD_NAME = "DetonatorMod";
-    public static final String VERSION = "BETA-0.0.4";
+    public static final String VERSION = "BETA-0.0.2";
 
     public static String API_KEY = "";
     
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
-    	ClientCommandHandler.instance.registerCommand(new ViewStatsCommand(this));
-    	ClientCommandHandler.instance.registerCommand(new RankUpdatesCommand(this));
+        ClientCommandHandler.instance.registerCommand(new ViewStatsCommand(this));
     }
 
 }
