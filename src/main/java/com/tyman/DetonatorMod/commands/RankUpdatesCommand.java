@@ -41,7 +41,7 @@ public class RankUpdatesCommand extends CommandBase {
             return;
         } else {
            //execute user fetching procedure
-        	FetchPlayerDataThread.main(iCommandSender, strings);
+        	FetchPlayerDataThread.main(iCommandSender);
         }
     }
 
