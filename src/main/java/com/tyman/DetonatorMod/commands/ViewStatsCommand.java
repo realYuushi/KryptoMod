@@ -7,7 +7,7 @@ import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.EnumChatFormatting;
 
 import com.tyman.DetonatorMod.DetonatorMod;
-import com.tyman.DetonatorMod.utils.FetchDataThread;
+import com.tyman.DetonatorMod.utils.FetchPlayerDataThread;
 
 public class ViewStatsCommand extends CommandBase {
 
@@ -41,7 +41,7 @@ public class ViewStatsCommand extends CommandBase {
             return;
         } else {
            //execute user fetching procedure
-        	FetchDataThread.main(iCommandSender, strings);
+        	FetchPlayerDataThread.main(iCommandSender, strings);
         }
     }
 
