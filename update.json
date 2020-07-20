@@ -5,6 +5,7 @@
     "1.8.9-recommended": "BETA-0.0.6"
   },
   "1.8.9": {
+    "0.0.6-beta": "Renamed Everything! And update functionality should be done. (Version formatting also changed to comply with semantic versioning http://semver.org/)",
     "BETA-0.0.5": "Fixed update checker, renamed /dstatsall to /dranks",
     "BETA-0.0.4": "Added dstatsall command",
     "BETA-0.0.3": "Made error messages display as red, instead of green.",
