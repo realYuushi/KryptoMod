@@ -1,3 +1,4 @@
-# DetonatorMod
-Mod for the detonator guild. 
+# KryptoMod
+Mod for the krypto guild.
+ 
  

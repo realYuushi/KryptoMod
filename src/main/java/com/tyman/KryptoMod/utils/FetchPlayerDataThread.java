@@ -1,4 +1,4 @@
-package com.tyman.DetonatorMod.utils;
+package com.tyman.KryptoMod.utils;
 
 import net.minecraft.command.ICommandSender;
 import net.minecraft.util.ChatComponentText;
@@ -8,13 +8,13 @@ public class FetchPlayerDataThread implements Runnable {
 	static ICommandSender iCommandSender = null;
 	static String[] strings;
 	public void run(){  
-		iCommandSender.addChatMessage(new ChatComponentText(EnumChatFormatting.GREEN + "[DetonatorMod] Fetching data for user " + strings[0] + "..."));
-        String response = HttpRequest.get("https://detonatorapi.glitch.me/?name="+strings[0]).body();
+		iCommandSender.addChatMessage(new ChatComponentText(EnumChatFormatting.GREEN + "[KryptoMod] Fetching data for user " + strings[0] + "..."));
+        String response = HttpRequest.get("https://kryptoapi.glitch.me/?name="+strings[0]).body();
         if (response.contains("Error")) {
-        	iCommandSender.addChatMessage(new ChatComponentText(EnumChatFormatting.RED + "[DetonatorMod]" + response));
+        	iCommandSender.addChatMessage(new ChatComponentText(EnumChatFormatting.RED + "[KryptoMod]" + response));
         }
         else {
-        	iCommandSender.addChatMessage(new ChatComponentText(EnumChatFormatting.GREEN + "[DetonatorMod]" + response));
+        	iCommandSender.addChatMessage(new ChatComponentText(EnumChatFormatting.GREEN + "[KryptoMod]" + response));
         }
 	}
 	public static void main(ICommandSender iiCommandSender, String[] stringss){

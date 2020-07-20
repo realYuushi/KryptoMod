@@ -1,4 +1,4 @@
-package com.tyman.DetonatorMod.events;
+package com.tyman.KryptoMod.events;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
@@ -16,7 +16,7 @@ public class OnServerJoin {
         	String updateStatus = ForgeVersion.getResult(Loader.instance().activeModContainer()).status.toString();
         	if (updateStatus == "OUTDATED") {
         		Minecraft.getMinecraft().thePlayer.sendChatMessage(EnumChatFormatting.BLACK + "---------------------------");
-        		Minecraft.getMinecraft().thePlayer.sendChatMessage(EnumChatFormatting.RED + "A new version of DetonatorMod is availible! Go to DetonatorMod in the mod options to update!");
+        		Minecraft.getMinecraft().thePlayer.sendChatMessage(EnumChatFormatting.RED + "A new version of KryptoMod is availible! Go to KryptoMod in the mod options to update!");
         		Minecraft.getMinecraft().thePlayer.sendChatMessage(EnumChatFormatting.BLACK + "---------------------------");
         	}
         }

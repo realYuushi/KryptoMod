@@ -1,4 +1,4 @@
-package com.tyman.DetonatorMod.utils;
+package com.tyman.KryptoMod.utils;
 
 import net.minecraft.command.ICommandSender;
 import net.minecraft.util.ChatComponentText;
@@ -7,9 +7,9 @@ import net.minecraft.util.EnumChatFormatting;
 public class FetchRankUpdatesThread implements Runnable {
 	static ICommandSender iCommandSender = null;
 	public void run(){  
-		iCommandSender.addChatMessage(new ChatComponentText(EnumChatFormatting.GREEN + "[DetonatorMod] Fetching data for all guild members..."));
+		iCommandSender.addChatMessage(new ChatComponentText(EnumChatFormatting.GREEN + "[KryptoMod] Fetching data for all guild members..."));
         String response = HttpRequest.get("https://detonatorapi.glitch.me/ranks").body();
-        iCommandSender.addChatMessage(new ChatComponentText(EnumChatFormatting.GREEN + "[DetonatorMod] " + response));
+        iCommandSender.addChatMessage(new ChatComponentText(EnumChatFormatting.GREEN + "[KryptoMod] " + response));
 	}
 	public static void main(ICommandSender iiCommandSender){
 		iCommandSender = iiCommandSender;

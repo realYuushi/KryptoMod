@@ -1,4 +1,7 @@
-package com.tyman.DetonatorMod.commands;
+package com.tyman.KryptoMod.commands;
+
+import com.tyman.KryptoMod.KryptoMod;
+import com.tyman.KryptoMod.utils.FetchRankUpdatesThread;
 
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.CommandException;
@@ -6,25 +9,22 @@ import net.minecraft.command.ICommandSender;
 import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.EnumChatFormatting;
 
-import com.tyman.DetonatorMod.DetonatorMod;
-import com.tyman.DetonatorMod.utils.FetchPlayerDataThread;
+public class RankUpdatesCommand extends CommandBase {
 
-public class ViewStatsCommand extends CommandBase {
+	KryptoMod kryptomod;
 
-    DetonatorMod detonatormod;
-
-    public ViewStatsCommand(DetonatorMod detonatormod) {
-        this.detonatormod = detonatormod;
+    public RankUpdatesCommand(KryptoMod kryptomod) {
+        this.kryptomod = kryptomod;
     }
 
     @Override
     public String getCommandName() {
-        return "dstats";
+        return "kranks";
     }
 
     @Override
     public String getCommandUsage(ICommandSender iCommandSender) {
-        return "dstats <username>";
+        return "kranks";
     }
 
     @Override
@@ -36,12 +36,12 @@ public class ViewStatsCommand extends CommandBase {
 
     @Override
     public void processCommand(ICommandSender iCommandSender, String[] strings) throws CommandException {
-        if(strings.length < 1 || strings.length > 1) {
-            iCommandSender.addChatMessage(new ChatComponentText(EnumChatFormatting.RED + "[DetonatorMod] Usage is /dstats <username>"));
+        if(strings.length > 1) {
+            iCommandSender.addChatMessage(new ChatComponentText(EnumChatFormatting.RED + "[KryptoMod] Usage is /kranks"));
             return;
         } else {
            //execute user fetching procedure
-        	FetchPlayerDataThread.main(iCommandSender, strings);
+        	FetchRankUpdatesThread.main(iCommandSender);
         }
     }
 
