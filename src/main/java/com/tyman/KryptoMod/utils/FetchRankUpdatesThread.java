@@ -8,7 +8,7 @@ public class FetchRankUpdatesThread implements Runnable {
 	static ICommandSender iCommandSender = null;
 	public void run(){  
 		iCommandSender.addChatMessage(new ChatComponentText(EnumChatFormatting.GREEN + "[KryptoMod] Fetching data for all guild members..."));
-        String response = HttpRequest.get("https://detonatorapi.glitch.me/ranks").body();
+        String response = HttpRequest.get("https://kryptoapi.glitch.me/ranks").body();
         iCommandSender.addChatMessage(new ChatComponentText(EnumChatFormatting.GREEN + "[KryptoMod] " + response));
 	}
 	public static void main(ICommandSender iiCommandSender){
