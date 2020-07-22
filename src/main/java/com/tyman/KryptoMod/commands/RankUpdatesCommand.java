@@ -1,5 +1,8 @@
 package com.tyman.KryptoMod.commands;
 
+import java.io.IOException;
+import java.net.URI;
+
 import com.tyman.KryptoMod.KryptoMod;
 import com.tyman.KryptoMod.utils.FetchRankUpdatesThread;
 
@@ -41,7 +44,16 @@ public class RankUpdatesCommand extends CommandBase {
             return;
         } else {
            //execute user fetching procedure
-        	FetchRankUpdatesThread.main(iCommandSender);
+        	//FetchRankUpdatesThread.main(iCommandSender);
+        	// open the web page for now because it is way too long sometimes
+        	iCommandSender.addChatMessage(new ChatComponentText(EnumChatFormatting.GREEN + "[KryptoMod] Opening webpage..."));
+        	URI uri = URI.create("http://kryptoguildapi.azurewebsites.net/ranks");
+        	try {
+				java.awt.Desktop.getDesktop().browse(uri);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
         }
     }
 
