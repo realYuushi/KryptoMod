@@ -1,12 +1,11 @@
 {
   "homepage": "https://github.com/tymanyay/DetonatorMod/releases",
   "promos": {
-    "1.8.9-latest": "0.0.7-beta",
-    "1.8.9-recommended": "0.0.7-beta"
+    "1.8.9-latest": "0.0.6-beta",
+    "1.8.9-recommended": "0.0.6-beta"
   },
   "1.8.9": {
-    "0.0.7-beta": "update checker test",
-    "0.0.6-beta": "Renamed Everything! And update functionality should be done. (Version formatting also changed to comply with semantic versioning http://semver.org/)",
+    "0.0.6-beta": "Renamed Everything! kranks opens in a webpage, because it could be too much for chat lol. Some update functionality done. (Version formatting also changed to comply with semantic versioning http://semver.org/)",
     "BETA-0.0.5": "Fixed update checker, renamed /dstatsall to /dranks",
     "BETA-0.0.4": "Added dstatsall command",
     "BETA-0.0.3": "Made error messages display as red, instead of green.",
