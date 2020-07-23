@@ -1,5 +1,5 @@
 package com.tyman.KryptoMod.events;
-
+/*
 import net.minecraft.client.Minecraft;
 import net.minecraft.util.EnumChatFormatting;
 import net.minecraftforge.common.ForgeVersion;
@@ -21,3 +21,4 @@ public class OnServerJoin {
     }
     
 }
+*/
