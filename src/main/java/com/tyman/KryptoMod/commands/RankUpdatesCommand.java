@@ -47,7 +47,7 @@ public class RankUpdatesCommand extends CommandBase {
         	//FetchRankUpdatesThread.main(iCommandSender);
         	// open the web page for now because it is way too long sometimes
         	iCommandSender.addChatMessage(new ChatComponentText(EnumChatFormatting.GREEN + "[KryptoMod] Opening webpage..."));
-        	URI uri = URI.create("http://kryptoguildapi.azurewebsites.net/ranks");
+        	URI uri = URI.create("https://kryptonguildapi.azurewebsites.net/ranks");
         	try {
 				java.awt.Desktop.getDesktop().browse(uri);
 			} catch (IOException e) {
