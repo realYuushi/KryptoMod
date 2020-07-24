@@ -13,7 +13,7 @@ public class KryptoMod
 {
     public static final String MODID = "kryptomod";
     public static final String MOD_NAME = "KryptoMod";
-    public static final String VERSION = "0.0.6-beta";
+    public static final String VERSION = "0.0.7-beta";
     
     @EventHandler
     public void init(FMLInitializationEvent event)

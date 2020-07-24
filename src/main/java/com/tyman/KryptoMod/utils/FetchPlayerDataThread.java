@@ -9,7 +9,7 @@ public class FetchPlayerDataThread implements Runnable {
 	static String[] strings;
 	public void run(){  
 		iCommandSender.addChatMessage(new ChatComponentText(EnumChatFormatting.GREEN + "[KryptoMod] Fetching data for user " + strings[0] + "..."));
-        String response = HttpRequest.get("http://kryptoguildapi.azurewebsites.net/?name="+strings[0]).body();
+        String response = HttpRequest.get("http://kryptonguildapi.azurewebsites.net/?name="+strings[0]).body();
         if (response.contains("Error")) {
         	iCommandSender.addChatMessage(new ChatComponentText(EnumChatFormatting.RED + "[KryptoMod]" + response));
         }
