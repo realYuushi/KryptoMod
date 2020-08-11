@@ -1,4 +1,4 @@
 # KryptoMod
-Mod for the krypto guild.
+Mod for the Krypton guild.
  
  
